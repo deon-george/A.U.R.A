@@ -1,0 +1,109 @@
+{
+  "expo": {
+    "name": "AURA",
+    "slug": "aura",
+    "version": "1.0.0",
+    "projectId": "aura-caregiver-app",
+    "extra": {
+      "eas": {
+        "projectId": "aura-caregiver-app"
+      }
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "aura",
+    "platforms": [
+      "android"
+    ],
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "usesCleartextTraffic": true,
+      "userInterfaceStyle": "dark",
+      "edgeToEdgeEnabled": true,
+      "package": "com.aura.app",
+      "googleServicesFile": "./app/google-services.json",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "RECORD_AUDIO",
+        "CAMERA",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "WAKE_LOCK"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-system-ui",
+      [
+        "@react-native-firebase/app",
+        {
+          "android": {
+            "googleServicesFile": "./app/google-services.json"
+          }
+        }
+      ],
+      [
+        "@react-native-firebase/auth"
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Aura needs your location for caregiver safety tracking.",
+          "locationWhenInUsePermission": "Aura needs your location for caregiver safety tracking."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "sounds": [],
+          "icon": "./assets/icon.png",
+          "color": "#FAFAFA"
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow Aura to access your microphone to communicate with Orito."
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow Aura to access your microphone for real-time voice control.",
+          "speechRecognitionPermission": "Allow Aura to convert your speech to text for Orito.",
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox",
+            "com.google.android.as"
+          ]
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Aura to access your photos to add pictures of your relatives.",
+          "cameraPermission": "Allow Aura to take photos of your relatives."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

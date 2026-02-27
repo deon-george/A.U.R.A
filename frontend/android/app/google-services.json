@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "489723100860",
+    "project_id": "orix-6c8b3",
+    "storage_bucket": "orix-6c8b3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489723100860:android:e7c7c06d5f66e7b7345ab9",
+        "android_client_info": {
+          "package_name": "com.aura.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489723100860-shbf53e63rt1822ugglub0t0fpede5pm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aura.app",
+            "certificate_hash": "082cc43dac49796ee743240abeb7b691f80e24ba"
+          }
+        },
+        {
+          "client_id": "489723100860-uao2hms79e95uju4obqo4ln361q0ga4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACsoMJvH_C8TtmqLXiCrtniflFvGaMvpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489723100860-uao2hms79e95uju4obqo4ln361q0ga4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
